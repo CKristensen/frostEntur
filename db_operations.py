@@ -35,3 +35,4 @@ def close(conn, cursor):
     conn.commit()
     cursor.close()
     conn.close()
+
