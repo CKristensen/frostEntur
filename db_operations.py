@@ -3,10 +3,10 @@ from psycopg2 import sql
 import getpass 
 import os
 
-PASS = os.environ['ACADEMY_DB_PASS']
-USER = os.environ['ACADEMY_USER_NAME']
-DBNAME = 'team_ccm'
-HOST = os.environ['ACADEMY_DB']
+PASS = os.environ['GOOLIT_AWS_PASS']
+USER = os.environ['AWS_USERNAME']
+DBNAME = 'postgres'
+HOST = os.environ['GOOLIT_AWS_DB']
 
 
 def connect():
@@ -21,7 +21,7 @@ def connect():
         [type]: [description]
 
     """    
-    conn = psycopg2.connect(host = "ds-etl-academy.cgbivchwjzle.eu-west-1.rds.amazonaws.com",
+    conn = psycopg2.connect(host = HOST,
     dbname = DBNAME,
     user = USER,
     password = PASS,
