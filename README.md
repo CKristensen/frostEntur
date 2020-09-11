@@ -7,3 +7,5 @@ Airflow DAG that gets the weather data from yesterday and updates the star schem
 
 Database in use: Postgresql hosted in AWS.
 Copy the DAG into Airflow schelduler to run the update function once a day.
+
+![alt text](/starimage.png)
